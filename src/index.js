@@ -15,11 +15,11 @@ import reportWebVitals from './reportWebVitals';
 export default function App(){
   return <BrowserRouter>
   <Routes>
-    <Route path='/weather-app' element={<Layouts/>}>
+    <Route path='/' element={<Layouts/>}>
       <Route index element={<Home/>} />
-      <Route path='/weather-app/about' element={<About />} />
-      <Route path='/weather-app/contact' element={<Contact />} />
-      <Route path='/weather-app/*' element={<NotFound />} />
+      <Route path='about' element={<About />} />
+      <Route path='contact' element={<Contact />} />
+      <Route path='*' element={<NotFound />} />
     </Route>
   </Routes>
   
